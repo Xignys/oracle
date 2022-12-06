@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1>Calcula tu IMC </h1> 
+
+<script>
+    function calcularIMC(peso, altura) {
+        return (peso / (altura * altura));
+    }
+    let nombre = prompt ("Nombre");
+    let pesoI = prompt ("Peso");
+    let alturaI = prompt ("Altura");
+    let imcCal = calcularIMC(pesoI, alturaI);
+    document.write(`${nombre}, su IMC es de ${imcCal}`)
+
+    if (imcCal < 18.5) {
+        document.write("<br><br>  Abajo de lo recomendado");
+    }
+
+    if (imcCal >= 18.5 && imcCal <= 24.9) {
+        document.write("<br><br>  IMC está dentro del intervalo normal");
+    }
+
+    if (imcCal >= 25) {
+        document.write("<br><br>  IMC considerado como sobrepeso");
+    }
+
+    if (imcCal >= 30) {
+        document.write("<br><br>  IMC considerado como obesidad");
+    }
+</script>

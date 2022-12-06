@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+
+<h1>Calcula puntos de equipo de futbol</h1>
+
+<script>
+    'use strict'
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    
+    var annoMundial = 1930;
+    var limite = parseInt(prompt("Ingrese el año limite"))
+
+    while (annoMundial <= limite) {        
+        imprimir("Hubo mundial en el año " + annoMundial)
+        annoMundial = annoMundial + 4;
+    }
+    imprimir("fin");
+
+
+</script>
+</html>
